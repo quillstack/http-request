@@ -42,7 +42,7 @@ abstract class HttpRequest
     public const METHOD_OPTIONS = 'OPTIONS';
 
     /**
-     * @var array
+     * @var string[]
      */
     public const AVAILABLE_METHODS = [
         self::METHOD_GET,
