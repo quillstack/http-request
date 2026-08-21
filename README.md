@@ -1,5 +1,7 @@
 # Quillstack HTTP Request
 
+[![Tests](https://github.com/quillstack/http-request/actions/workflows/tests.yml/badge.svg)](https://github.com/quillstack/http-request/actions/workflows/tests.yml)
+
 Common interface for Server Requests and Client Requests.
 
 ## Docker
