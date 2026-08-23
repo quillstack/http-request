@@ -5,6 +5,7 @@
 [![Downloads](https://img.shields.io/packagist/dt/quillstack/http-request.svg)](https://packagist.org/packages/quillstack/http-request)
 [![PHP Version](https://img.shields.io/packagist/php-v/quillstack/http-request)](https://packagist.org/packages/quillstack/http-request)
 [![StyleCI](https://github.styleci.io/repos/445684848/shield?branch=main)](https://github.styleci.io/repos/445684848?branch=main)
+[![CodeFactor](https://www.codefactor.io/repository/github/quillstack/http-request/badge)](https://www.codefactor.io/repository/github/quillstack/http-request)
 [![License](https://img.shields.io/packagist/l/quillstack/http-request)](https://github.com/quillstack/http-request/blob/main/LICENSE)
 
 Common interface for Server Requests and Requests, based on
