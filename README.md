@@ -6,6 +6,11 @@
 [![PHP Version](https://img.shields.io/packagist/php-v/quillstack/http-request)](https://packagist.org/packages/quillstack/http-request)
 [![StyleCI](https://github.styleci.io/repos/445684848/shield?branch=main)](https://github.styleci.io/repos/445684848?branch=main)
 [![CodeFactor](https://www.codefactor.io/repository/github/quillstack/http-request/badge)](https://www.codefactor.io/repository/github/quillstack/http-request)
+[![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=quillstack_http-request&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=quillstack_http-request)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=quillstack_http-request&metric=coverage)](https://sonarcloud.io/summary/new_code?id=quillstack_http-request)
+[![Maintainability](https://sonarcloud.io/api/project_badges/measure?project=quillstack_http-request&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=quillstack_http-request)
+[![Reliability](https://sonarcloud.io/api/project_badges/measure?project=quillstack_http-request&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=quillstack_http-request)
+[![Security](https://sonarcloud.io/api/project_badges/measure?project=quillstack_http-request&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=quillstack_http-request)
 [![License](https://img.shields.io/packagist/l/quillstack/http-request)](https://github.com/quillstack/http-request/blob/main/LICENSE)
 
 Common interface for Server Requests and Requests, based on
