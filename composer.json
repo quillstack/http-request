@@ -3,7 +3,7 @@
     "description": "Common interface for Server Requests and Client Requests.",
     "type": "library",
     "license": "MIT",
-    "homepage": "https://quillstack.org/request",
+    "homepage": "https://quillstack.org/packages/http-request",
     "authors": [
         {
             "name": "Radek Ziemniewicz",
