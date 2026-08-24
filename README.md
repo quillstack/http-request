@@ -22,17 +22,27 @@ a route, a request being built from globals, a middleware answering a preflight 
 here rather than each writing its own string, so a typo is a missing constant rather than a
 route which never matches.
 
-### Requirements
+## Why this exists
+
+`'GET'` written as a string in forty places is forty chances to write `'Get'` once. This is the
+HTTP methods as constants, the list of them, and the two questions worth asking about one: does
+it carry a body, and is it safe to repeat.
+
+That is genuinely all it is. It exists as a package rather than a class inside the router because
+the router, the client, the server request and the middleware all need the same answer, and none
+of them should depend on the others to get it.
+
+## Requirements
 
 - PHP 8.1 or newer
 
-### Installation
+## Installation
 
 ```shell
 composer require quillstack/http-request
 ```
 
-### Usage
+## Usage
 
 ```php
 use Quillstack\HttpRequest\HttpRequest;
@@ -44,7 +54,7 @@ if (!in_array($method, HttpRequest::AVAILABLE_METHODS, true)) {
 }
 ```
 
-### Technical documentation
+## Technical documentation
 
 `HttpRequest` holds one constant per method and one list of all of them.
 
@@ -65,19 +75,32 @@ answers to when it has to send `405 Method Not Allowed` with an `Allow` header.
 There is nothing else here on purpose: a package which only names things has no behaviour to
 get wrong, and everything depending on it stays free of everything else.
 
-### Unit tests
+## Benchmark
+
+**There is nothing to measure and nothing to measure it against.**
+
+This package is a class of constants and two static methods that read an array. No other library
+does only this — the frameworks that have the same constants have them inside a larger component,
+where they cannot be installed on their own or compared on their own.
+
+A benchmark here would be timing `in_array()` against itself. The honest thing a benchmark
+section can say about this package is that it does not need one.
+
+## Tests
 
 ```shell
 composer test
 ```
 
-### Docker
+## The rest of Quillstack
 
-```shell
-docker-compose up -d
-docker exec -w /var/www/html -it quillstack_http-request sh
-```
+This is one component of [Quillstack](https://github.com/quillstack), a PHP framework which is
+as simple to use as it is strict about what it does.
 
-### License
+- [quillstack/router](https://github.com/quillstack/router) — which answers `HEAD` with whatever answers `GET`
+- [quillstack/server-request](https://github.com/quillstack/server-request) — which refuses a method nobody has heard of
+- [quillstack/http-client](https://github.com/quillstack/http-client) — which sends them
+
+## License
 
 MIT. See [LICENSE](LICENSE).
